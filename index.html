@@ -8,10 +8,10 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-	<div class="overflow hidden"> 
-	    <div class="popup hidden"> <a href="#" class="close"> </a>
-	        <form class="form"> 
-	        	<h3 class="form-header"> Ваш фидбек </h3>
+	<div class="overflow hidden">
+	   <div class="popup"> <a href="#" class="close"> </a>
+	       <form class="form"> 
+	        	<h3 class="header"> Ваш фидбек </h3>
                 <div class="form-group">
                     <label class="select-group">
                             <span class="select-label">Как часто вы заходите на сайт?</span>
@@ -83,11 +83,12 @@
 		</div>
 	</header>
 	<section class="trends-section">
-		<h2 class="trends-header">
+		<h2 class="header">
 			<span class="trends-title">Сейчас в тренде</span>
         </h2>
         <div class="trends">
-        	<article class="trend trend-1">
+        	<article class="trend">
+                <img src="images/trend1.jpg" alt="Сейчас в тренде: сад на подоконнике" class="trend-img">
         		<div class="trend-container">
         		 	<ul class="trend-links">
         		 		<li class="trend-links-item">
@@ -102,7 +103,8 @@
                     </h3>
                 </div>
         	</article>
-        	<article class="trend trend-2">
+        	<article class="trend">
+                <img src="images/trend2.jpg" alt="Сыры на красивых картинках из интернета: какие они на вкус?" class="trend-img">
         		<div class="trend-container">
         		 	<ul class="trend-links">
         		 		<li class="trend-links-item">
@@ -114,7 +116,8 @@
                     </h3>
                 </div>
         	</article>
-        	<article class="trend trend-3">
+        	<article class="trend">
+                <img src="images/trend3.jpg" alt="Собираемся в первый поход в горы" class="trend-img">
         		<div class="trend-container">
         		 	<ul class="trend-links">
         		 		<li class="trend-links-item">
@@ -129,7 +132,8 @@
                     </h3>
                 </div>
         	</article>
-        	<article class="trend trend-4">
+        	<article class="trend">
+                <img src="images/trend4.jpg" alt="Сейчас в тренде: сколько витамина с в лимонах?" class="trend-img">
         		<div class="trend-container">
         		 	<ul class="trend-links">
         		 		<li class="trend-links-item">
@@ -156,7 +160,7 @@
             <div class="card-info">
                 <ul class="card-links">
                     <li class="card-links-item">
-                        <a class="card-link" href="#0">Travel</a>
+                        <a class="card-link first-link" href="#0">Travel</a>
                     </li>
                     <li class="card-links-item">
                         <a class="card-link" href="#0">Health</a>
@@ -183,7 +187,7 @@
             <div class="card-info">
                 <ul class="card-links">
                     <li class="card-links-item">
-                        <a class="card-link" href="#0">Health</a>
+                        <a class="card-link first-link" href="#0">Health</a>
                     </li>
                     <li class="card-links-item">
                         <a class="card-link" href="#0">Lifestyle</a>
@@ -210,7 +214,7 @@
             <div class="card-info">
                 <ul class="card-links">
                     <li class="card-links-item">
-                        <a class="card-link" href="#0">Music</a>
+                        <a class="card-link first-link" href="#0">Music</a>
                     </li>
                 </ul>
                 <h3 class="card-title">
@@ -237,7 +241,7 @@
             <div class="card-info">
                 <ul class="card-links">
                     <li class="card-links-item">
-                        <a class="card-link" href="#0">Lifestyle</a>
+                        <a class="card-link first-link" href="#0">Lifestyle</a>
                     </li>
                     <li class="card-links-item">
                         <a class="card-link" href="#0">Food</a>
@@ -257,14 +261,14 @@
                 </div>
             </div>
         </article>
-        <article class="card">
+        <article class="card last-card">
             <figure class="card-media">
                 <img src="images/last-post5.jpg" class="img-card" alt="Last-post5" width="380">
             </figure>
             <div class="card-info">
                 <ul class="card-links">
                     <li class="card-links-item">
-                        <a class="card-link" href="#0">Lifestyle</a>
+                        <a class="card-link first-link" href="#0">Lifestyle</a>
                     </li>
                     <li class="card-links-item">
                         <a class="card-link" href="#0">Interior</a>
@@ -290,7 +294,7 @@
     </main>
     <aside class="sidebar">
         <section class="recent-posts-section">
-            <h2 class="recent-posts-header">
+            <h2 class="header">
                 <span class="recent-posts-title">Новые посты</span>
             </h2>
             <article class="recent-posts-article">
@@ -342,7 +346,7 @@
         <section class="search-section">
             <form class="search">
                 <lable class="lable-search">
-                    <input type="search" class="search-field" placeholder="Search..." required>
+                    <input type="search" class="search-field" placeholder="Найти..." required>
                         <span class="hidden">Найти...</span>
                 </lable>
                 <button class="search-button" type="submit">
@@ -351,7 +355,7 @@
             </form>
         </section>
         <section class="newsletter-section">
-            <h2 class="newsletter-header">Рассылка</h2>
+            <h2 class="header newsletter-title">Рассылка</h2>
                 <form class="email">
                     <label>
                         <input type="email" class="email-field" placeholder="Ваш email-адрес" required>
@@ -364,7 +368,7 @@
                 </form>
         </section>
         <section class="tags-section">
-            <h2 class="tags-header">Теги</h2>
+            <h2 class="header tags-title">Теги</h2>
             <ul class="tags-list">
                 <li class="tags-list-item">
                     <a class="tags-link" href="#0">Fashion</a>
@@ -393,7 +397,7 @@
             </ul>
         </section>
         <section class="categories-section">
-            <h2 class="categories-header">Темы</h2>
+            <h2 class="header categories-title">Темы</h2>
             <ul class="categories-list">
                 <li class="categories">
                     <a class="categories-link" href="#0">Красота</a>
@@ -426,7 +430,7 @@
 </div>
 <div class="shop-wrapper">
     <section class="shop-section">
-		<h2 class="shop-header">
+		<h2 class="header">
 			<span class="shop-title">Наши изделия</span>
         </h2>
         <div class="shop">
