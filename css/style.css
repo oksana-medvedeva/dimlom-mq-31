@@ -359,14 +359,18 @@ a:focus {
 .trend-container {
     position: absolute;
     z-index: 2;
-    border: solid 3px #b59f5b;
-    padding: 30px 15px;
     bottom: 0;
     left: 0;
-    margin: 15px;
 
     display: flex;
     flex-direction: column;
+    width: 100%;
+}
+
+.trend-inner-container {
+    border: solid 3px #b59f5b;
+    padding: 30px 15px;
+    margin: 15px;
 }
 
 .trend-links {
@@ -384,8 +388,12 @@ a:focus {
     color: #b59f5b;
 }
 
-.trend-links-item:nth-child(n + 2) {
+.trend-links-item {
     margin-left: 18px;
+}
+
+.first-trend-link {
+    margin: 0;
 }
 
 .trend-title {
@@ -843,7 +851,7 @@ a:focus {
     background-position: center;
 }
 
-.socials-item:last-child {
+.last-socials-item {
     margin-right: 0;
 }
 
@@ -925,12 +933,13 @@ a:focus {
     }
 
     .trend {
-        max-width: calc(50% - 3px);
-        margin-bottom: 3px;
+        width: 50%;
+        border-bottom: solid 3px #ffffff;
+        margin-bottom: 0;
     }
 
-    .trend:nth-child(2n+2) {
-        margin-left: 3px;
+    .even-trend {
+        border-left: solid 3px #ffffff;
     }
 
     .trend-name {  
@@ -946,7 +955,7 @@ a:focus {
     }
 
     .main {
-        width: 55%;
+        margin-right: 35px;
     }
 
     .card {
@@ -962,7 +971,7 @@ a:focus {
         margin-bottom: 40px;
     }
 
-    .card:last-child::after {
+    .last-card::after {
         display: none;
     }
 
@@ -981,11 +990,10 @@ a:focus {
     }
 
     .sidebar {
-        width: 38%;
         max-width: 270px;
     }
 
-    .recent-posts-title, .newsletter-title, .tags-title, .categories-title {
+    .recent-posts-title  {
         font-size: 14px;
     }
 
@@ -993,8 +1001,20 @@ a:focus {
         margin-bottom: 60px;
     }
 
+    .newsletter-title {
+        font-size: 14px;
+    }
+
     .tags-section {
         margin-bottom: 60px;
+    }
+
+    .tags-title {
+        font-size: 14px;
+    }
+
+    .categories-title {
+        font-size: 14px;
     }
 
     .shop-wrapper {
@@ -1051,9 +1071,13 @@ a:focus {
         flex-wrap: wrap;
     }
 
-    .menu-list-item:nth-child(n + 2) {
+    .menu-list-item {
         margin-left: 37px;
     }  
+
+    .first-menu-list-item {
+        margin: 0;
+    }
 
     .menu-link {
         text-decoration: none;
@@ -1070,12 +1094,18 @@ a:focus {
     }
 
     .trend {
-        max-width: calc(25% - 5px);
-        margin-right: 5px;
+        width: 25%;
+        margin: 0;
+        border-bottom: none;
+        border-right: solid 3px #ffffff;
     }
 
-    .trend:nth-child(2n+2) {
-        margin-left: 0;
+    .last-trend {
+         border-right: none;
+    }
+
+    .even-trend {
+        border-left: none;
     }
 
     .trend-name {  
@@ -1113,8 +1143,12 @@ a:focus {
         margin: 0;
     }
 
-    .card:nth-child(n + 2) {
+    .card {
         margin-top: 59px;
+    }
+
+    .first-card {
+        margin: 0;
     }
 
     .card-info {
@@ -1130,7 +1164,19 @@ a:focus {
         width: 275px;
     }
 
-    .recent-posts-title, .newsletter-title, .tags-title, .categories-title {
+    .recent-posts-title {
+        font-size: 14px;
+    }
+
+    .newsletter-title {
+        font-size: 14px;
+    }
+
+    .tags-title {
+        font-size: 14px;
+    }
+
+    .categories-title {
         font-size: 14px;
     }
 
